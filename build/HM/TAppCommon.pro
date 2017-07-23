@@ -16,6 +16,4 @@ INCLUDEPATH += ../../source/Lib
 msvc:INCLUDEPATH += ../../compat/msvc
 DEPENDPATH += .
 DESTDIR = $${OUT_PWD}/..
-
-HEADERS += ../../source/Lib/TAppCommon/program_options_lite.h
-SOURCES += ../../source/Lib/TAppCommon/program_options_lite.cpp
+include(TAppCommon.pri)

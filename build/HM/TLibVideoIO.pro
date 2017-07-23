@@ -15,6 +15,6 @@ INCLUDEPATH += ../../source/Lib
 msvc: INCLUDEPATH += ../../compat/msvc
 DEPENDPATH += .
 DESTDIR = $${OUT_PWD}/..
+include(TLibVideoIO.pri)
 
-HEADERS += ../../source/Lib/TLibVideoIO/TVideoIOYuv.h
-SOURCES += ../../source/Lib/TLibVideoIO/TVideoIOYuv.cpp
+DISTFILES +=

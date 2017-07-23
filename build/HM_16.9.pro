@@ -14,4 +14,3 @@ SUBDIRS += \
     HM/TAppDecoder.pro \
     HM/TAppEncoder.pro \
     HM/TAppDecoderAnalyser.pro
-

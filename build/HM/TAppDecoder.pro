@@ -14,6 +14,7 @@ DEFINES += _CONSOLE _CRT_SECURE_NO_WARNINGS
 INCLUDEPATH += ../../source/Lib
 msvc: INCLUDEPATH += ../../compat/msvc
 DEPENDPATH += .
+include(TAppDecoder.pri)
 
 LIBS += -L$$OUT_PWD/..
 
@@ -24,10 +25,4 @@ CONFIG(release, debug|release){
     LIBS += -lTLibDecoder  -lTAppCommon -lTLibVideoIO  -lTLibCommon
 }
 
-DEPENDPATH += ../../source/Lib
-
-HEADERS += ../../source/App/TAppDecoder/TAppDecCfg.h \
-    ../../source/App/TAppDecoder/TAppDecTop.h
-SOURCES += ../../source/App/TAppDecoder/decmain.cpp \
-    ../../source/App/TAppDecoder/TAppDecCfg.cpp \
-    ../../source/App/TAppDecoder/TAppDecTop.cpp
+DEPENDPATH += ../../source/Lib 
