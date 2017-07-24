@@ -5,10 +5,15 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-
 TEMPLATE = app
-TARGET = HM_169
-DESTDIR = $${OUT_PWD}/../../../../decoders
+TARGET = TAppDecoder
+DESTDIR = $${OUT_PWD}/decoders
+
+VERSION_MAJOR = 16
+VERSION_MINOR = 9
+VERSION_BUILD = 0
+
+VERSION = $${VERSION_MAJOR}.$${VERSION_MINOR}.$${VERSION_BUILD}
 
 DEFINES += _CONSOLE _CRT_SECURE_NO_WARNINGS
 INCLUDEPATH += ../../source/Lib
